@@ -3,27 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de prueba</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CFT Estatal</title>
+    <style>
+        body {
+            background-color: #E6E6E6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 30px;
+            background-color: #ccc;
+        }
+
+        header img {
+            width: 120px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .carreras {
+            margin: 20px;
+        }
+
+        .carreras img {
+            width: 100px;
+        }
+
+        .advertisement {
+            margin-top: 30px;
+        }
+
+        .advertisement img {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .tabla {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tabla th, .tabla td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Bienvenido/a</h1>
+        <img src="logo.png" alt="CFT Estatal Logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Quienes Somos</a>
+            <a href="#">Carreras</a>
+            <a href="#">Vinculación</a>
+            <a href="#">Admisión</a>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Acerca de</h2>
-            <p>Esta es una página web simple creada con HTML y CSS.</p>
-        </section>
-        <section>
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través del correo electrónico: ejemplo@correo.com</p>
-            <a href="juan.duran.marin@cftmail.cl" class="contact-button">Enviar Correo</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Pagina De Prueba</p>
-    </footer>
+
+    <section class="carreras">
+        <h2>Carreras</h2>
+        <div>
+            <div style="display: inline-block; width: 45%;">
+                <img src="educacion.jpg" alt="Educación">
+                <p><a href="#">Área Académica de Educación y Humanidades</a></p>
+                <p><a href="#">Técnico de Nivel Superior en Educación Especial</a></p>
+                <p><a href="#">Técnico de Nivel Superior en Educación Parvularia y Primer – Segundo año de Educación Básica</a></p>
+            </div>
+            <div style="display: inline-block; width: 45%;">
+                <img src="ingenieria.jpg" alt="Ingeniería">
+                <p><a href="#">Área Académica de Ingeniería e Industrias</a></p>
+                <p><a href="#">Técnico de Nivel Superior en Informática y Aplicaciones Tecnológicas</a></p>
+                <p><a href="#">Técnico de Nivel Superior en Fabricación y Montaje de Estructuras Metálicas</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="advertisement">
+        <img src="matriculate.jpg" alt="¡Matricúlate con Nosotros!">
+    </section>
+
+    <section class="tabla">
+        <h2>Tabla de estudiantes</h2>
+        <table class="tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Asignatura</th>
+            </tr>
+            <tr>
+                <td>Yamil</td>
+                <td>Riquelme</td>
+                <td>Videojuegos</td>
+            </tr>
+            <tr>
+                <td>Nicolás</td>
+                <td>Nancuante</td>
+                <td>Videojuegos</td>
+            </tr>
+        </table>
+    </section>
+
 </body>
 </html>
-
